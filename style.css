@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Norse-Bold';
-  src: url(Norse-Bold.otf);
+  src: url(fonts/Norse-Bold.otf);
 }
 *{
   margin: 0px;
@@ -22,7 +22,7 @@ body{
   flex-grow: 1;
   min-width: 345px;
   height: 100vh;
-  background: url(halie-west-25xggax4bSA-unsplash.jpg);
+  background: url(Images/halie-west-25xggax4bSA-unsplash.jpg);
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -84,7 +84,7 @@ form {
 }
 
 label {
-  position: relative;
+ 
   width: 15rem;
   margin-bottom: 15px;
 }
@@ -99,6 +99,7 @@ a {
 
 button[type='submit'] {
   padding: .8rem 1.3rem;
+  margin-bottom: 0.5rem;
   font-size: 1.3rem;
   background-color: rgb(125, 221, 99);
   border: none;
@@ -122,25 +123,12 @@ input {
 }
 
 input:focus {
-  border: none;
+  border: 2px solid rgb(125, 221, 99);
   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
   outline: none;
 }
 
-input:invalid:focus {
-  border: 2px solid rgb(125, 221, 99)
-}
 
-input:focus:valid {
-  border: rgb(125, 221, 99) 2px solid;
-}
-
-.error {
-  font-family: "Norse-Bold";
-  font-size: .7rem;
-  color: rgb(125, 221, 99);
-  position: absolute;
-}
 @media screen and (max-width:850px){
   .container{
     flex-direction: column;
